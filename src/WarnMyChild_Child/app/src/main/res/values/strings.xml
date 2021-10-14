@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">WarnMyChild</string>
+    <string name="app_label">Warn My Child</string>
+    <string name="Scan">QR Code</string>
+    <string name="back">Back</string>
+    <string name="ok">Ok</string>
+    <string name="API_KEY">USE_YOUR_API_KEY</string>
+
+    // Ads
+    <string name="banner_ad_id">testw6vs28auh3</string>
+
+    // Geo Fence
+    <string name="geofence">Geo-Fence</string>
+    <string name="geofence_in">Entered to Geo Fence</string>
+    <string name="geofence_stay">You are in side Geo Fence</string>
+    <string name="geofence_out">You are out side to Geo Fence.</string>
+
+    <string name="geofence_in_child">Your child entered to Geo Fence</string>
+    <string name="geofence_stay_child">Your child inside Geo Fence</string>
+    <string name="geofence_out_child">Your child exited from Geo Fence</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_geofence">Set Geofence</string>
+    <string name="menu_slideshow">Home</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_logout">Logout</string>
+
+    <string name="default_conversion_value">7</string>
+    <string name="default_valid_continue_time">1000000</string>
+    <string name="default_dwell_delay_time">5000</string>
+    <string name="default_notification_interval">100</string>
+    <string name="no_geofence_data">no GeoFence Data!</string>
+    <string name="no_new_request">requestGeoFenceWithNewIntent: no new request to add! </string>
+    <string name="trigger_lable">trigger is </string>
+    <string name="default_trigger_lable">default trigger is </string>
+    <string name="geofence_success_lable">add geofence success！</string>
+    <string name="geofence_failed_lable">add geofence failed : </string>
+    <string name="geofence_error_lable">add geofence error：</string>
+    <string name="location_setting_success">check location settings success</string>
+    <string name="geofence_success">geoFence onSuccess</string>
+    <string name="geofence_failure">geoFence onFailure:</string>
+    <string name="location_setting_onfailure">checkLocationSetting onFailures:</string>
+    <string name="geofence_exception">geoFence exception:</string>
+    <string name="method_on_unbind">\"onUnbind: \"</string>
+    <string name="method_on_destroy">\"onDestroy: \"</string>
+    <string name="home_activity_tag">TAG</string>
+    <string name="fragment_instance_success">Fragment instence success</string>
+    <string name="issue_in_scanning">Issue in processing scan result</string>
+    <string name="home_activity_lable">\"HomeActivity \"</string>
+    <string name="null_fragment">fragment null</string>
+    <string name="fragment_null">fragment null</string>
+    <string name="scan_result_not_found">Scanned result not available</string>
+    <string name="test_cloud_db_name">test1</string>
+    <string name="open_cloud_db_success">open clouddbzone success</string>
+    <string name="open_cloud_db_failed_for">\"open clouddbzone failed for \"</string>
+    <string name="try_reopen_cloud_db">CloudDBZone is null, try re-open it</string>
+    <string name="child_id_column_name">ChildID</string>
+    <string name="subscribe_snapshot_result">subscribeSnapshot: get result</string>
+    <string name="subscribe_snapshot_lable">\"subscribeSnapshot: \"</string>
+    <string name="on_snapshot">\"onSnapshot: \"</string>
+    <string name="on_snapshot_ui_1">onSnapshot: UI 1</string>
+    <string name="on_snapshot_ui_2">onSnapshot: UI 2</string>
+    <string name="on_snapshot_get_object">\"onSnapshot:(getObject) \"</string>
+    <string name="access_token_lable">accessToken:</string>
+    <string name="signin_success_lable">signin success</string>
+    <string name="sign_in_failed_lable">signin failed</string>
+    <string name="on_error_lable">on error</string>
+    <string name="connecting">Connecting...</string>
+    <string name="no_user_found">No user found</string>
+    <string name="qr_generated">qrBitmap Generated</string>
+    <string name="build_bitmap">buildBitmap</string>
+    <string name="location_update_failed">Location Updation failed!</string>
+    <string name="geo_fence_location_availablity">GeoFence onLocationAvailability isLocationAvailable:</string>
+    <string name="on_map_ready_lable">\"onMapReady: \"</string>
+    <string name="map_updated_msg">Map Updated.</string>
+    <string name="connected_to_parent">Connected to Parent.</string>
+
+    <string name="child_default_mail_id">defaultmail</string>
+    <string name="child_default_name">Connected to Parent.</string>
+    <string name="child_default_parent_id">Connected to Parent.</string>
+    <string name="upsert_success">\"upsert_sucess \"</string>
+    <string name="records_lable">\" records\"</string>
+    <string name="insert_failed">\"insert_failed \"</string>
+    <string name="notification_details_upsert_success">\"Notification details upsert_sucess \"</string>
+    <string name="notification_details_sent_success">Notification data sent successfully.</string>
+    <string name="notification_details_insert_failed">\"Notification details insert_failed \"</string>
+    <string name="init_geofence_lable">\"initGeoFence: \"</string>
+    <string name="geo_updated_lable">Geo Updated</string>
+    <string name="radius_lable">\" , Redius: \"</string>
+    <string name="lat_lang_lable">\"Lat,lng: \"</string>
+    <string name="on_service_connected">\"  onServiceConnected\"</string>
+    <string name="activity_a_service_disconnected">ActivityA - onServiceDisconnected</string>
+    <string name="keep_child_safely">Keep your child safe under your guidance</string>
+    <string name="click_to_connect">Click here to connect server</string>
+    <string name="connect_first">For monitoring first connect to server and tap on image to show the generated QR code to parent</string>
+    <string name="connect_msg">Connect to Server</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+
+</resources>

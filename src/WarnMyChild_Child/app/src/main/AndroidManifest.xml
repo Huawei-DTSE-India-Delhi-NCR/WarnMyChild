@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.warnmychild.child">
+    <!-- Camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- File reading permission -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/child_safezone"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/child_safezone"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EntryChoiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".kotlin.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".kotlin.MainActivity" />
+        <activity android:name=".kotlin.SplashActivity" />
+        <activity
+            android:name=".kotlin.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service
+            android:name=".kotlin.GeoFence.GeoService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".kotlin.GeoFence.GeoFenceBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.huawei.hmssample.geofence.GeoFenceBroadcastReceiver.ACTION_PROCESS_LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".java.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".java.MainActivity" />
+        <activity android:name=".java.SplashActivity" />
+        <activity
+            android:name=".java.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <service
+            android:name=".java.GeoFence.GeoService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".java.GeoFence.GeoFenceBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.huawei.hmssample.geofence.GeoFenceBroadcastReceiver.ACTION_PROCESS_LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

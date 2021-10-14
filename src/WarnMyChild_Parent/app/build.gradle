@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+
+    defaultConfig {
+        applicationId "com.huawei.parentapp"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("xxxxxxx.jks")
+            keyAlias 'xxxxxxx'
+            keyPassword 'xxxxxxx'
+            storePassword 'xxxxxxx'
+        }
+        debug{
+            storeFile file("xxxxxxx.jks")
+            keyAlias 'xxxxxxx'
+            keyPassword 'xxxxxxx'
+            storePassword 'xxxxxxx'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //implementation 'com.huawei.agconnect:agconnect-cloud-database:1.4.7.300'
+    implementation 'com.huawei.agconnect:agconnect-database:1.2.3.301'
+    implementation 'com.huawei.agconnect:agconnect-auth:1.3.1.300'
+    implementation 'com.huawei.hms:hwid:4.0.4.300'
+    implementation 'com.huawei.hms:maps:5.0.5.301'
+    implementation 'com.huawei.hms:scan:1.1.3.301'
+    implementation 'com.huawei.hms:location:5.0.4.300'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+}

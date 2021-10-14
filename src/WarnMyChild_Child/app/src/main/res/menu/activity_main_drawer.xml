@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+       <!-- <item
+            android:id="@+id/nav_home"
+            android:label="@string/menu_home"
+            android:title="@string/menu_home" />-->
+       <!-- <item
+            android:id="@+id/nav_geofence"
+            android:label="@string/menu_geofence"
+            android:title="@string/menu_geofence" />-->
+        <item
+            android:id="@+id/nav_slideshow"
+            android:label="@string/menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+
+
+    </group>
+</menu>

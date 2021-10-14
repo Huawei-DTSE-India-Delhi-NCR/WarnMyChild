@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+
+    <com.huawei.hms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cameraTargetLat="20.360963"
+        app:cameraTargetLng="86.322154"
+        app:cameraZoom="10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/scan_qr_bg_color"
+            android:orientation="vertical"
+            android:padding="@dimen/scan_qr_bg_padding">
+
+            <TextView
+                android:id="@+id/txt_heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/welcome_scan"
+                android:textSize="@dimen/welcome_scan_txt_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_heading2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/first_connect_child"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/scan_view_bg" />
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scanner_card_height"
+        android:layout_margin="40dp"
+        app:cardBackgroundColor="@color/scanner_card_bg_color"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_scan"
+                android:layout_width="@dimen/qr_img_width"
+                android:layout_height="@dimen/qr_img_height"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@+id/btn_scan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/clck_to_scan"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

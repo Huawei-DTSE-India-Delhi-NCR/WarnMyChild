@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C70039</color>
+    <!--toptitle-->
+    <color name="colorPrimaryDark">#C70039</color>
+    <color name="colorAccent">#D72626</color>
+    <color name="parent_txt_color">#C70039</color>
+    <color name="map_view_default_color">#F4EEEE</color>
+    <color name="card_view_bg_color">#FFFFFF</color>
+    <color name="default_txt_color">#000000</color>
+    <color name="set_config_txt_color">#FFFFFF</color>
+    <color name="scan_qr_bg_color">#F1ECEC</color>
+    <color name="scan_view_bg">#FFFFFF</color>
+    <color name="scanner_card_bg_color">#C70039</color>
+    <color name="child_msg_txt_color">#000000</color>
+</resources>

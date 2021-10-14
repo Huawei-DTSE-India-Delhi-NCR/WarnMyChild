@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="wmc_logo_card_width">270dp</dimen>
+    <dimen name="wmc_logo_card_height">350dp</dimen>
+    <dimen name="wmc_logo_card_radius">60dp</dimen>
+    <dimen name="wmc_image_width">140dp</dimen>
+    <dimen name="wmc_image_height">180dp</dimen>
+    <dimen name="app_lable_width">257dp</dimen>
+    <dimen name="app_lable_height">47dp</dimen>
+    <dimen name="app_lable_text_size">24dp</dimen>
+    <dimen name="wmc_text_margin_top">30dp</dimen>
+    <dimen name="wmc_text_margin_left">4dp</dimen>
+    <dimen name="wmc_text_margin_right">4dp</dimen>
+    <dimen name="wmc_text_size">16dp</dimen>
+    <dimen name="wmc_login_button_width">287dp</dimen>
+    <dimen name="wmc_login_button_height">57dp</dimen>
+    <dimen name="wmc_login_button_margin_top">30dp</dimen>
+    <dimen name="wmc_margin_top">20dp</dimen>
+    <dimen name="qr_width">152dp</dimen>
+    <dimen name="qr_height">152dp</dimen>
+    <dimen name="qr_button_margin">20dp</dimen>
+    <dimen name="connect_txt_size">20dp</dimen>
+    <dimen name="profile_image_width">70dp</dimen>
+    <dimen name="profile_image_height">70dp</dimen>
+    <dimen name="profile_text_padding">4dp</dimen>
+    <dimen name="qr_screen_margin_top">20dp</dimen>
+    <dimen name="qr_image_width">152dp</dimen>
+    <dimen name="qr_image_height">152dp</dimen>
+    <dimen name="qr_txt_size">20dp</dimen>
+    <dimen name="qr_img_width">122dp</dimen>
+    <dimen name="qr_img_height">122dp</dimen>
+    <dimen name="qr_card_view_height">216dp</dimen>
+    <dimen name="qr_card_view_margin">40dp</dimen>
+    <dimen name="qr_radius">5dp</dimen>
+    <dimen name="qr_elevation">5dp</dimen>
+    <dimen name="welcome_layout_padding">30dp</dimen>
+    <dimen name="welcome_txt_size">30sp</dimen>
+    <dimen name="welcome_layout_margin_top">10dp</dimen>
+    <dimen name="welcome_txt_margint_top">10dp</dimen>
+
+</resources>

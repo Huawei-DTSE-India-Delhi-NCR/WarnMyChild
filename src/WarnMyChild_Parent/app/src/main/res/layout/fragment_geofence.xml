@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.huawei.hms.maps.MapView
+        android:id="@+id/mapview_mapviewdemo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/map_view_default_color"
+        app:cameraTargetLat="20.36625925866821"
+        app:cameraTargetLng="86.32464166749153"
+        app:cameraZoom="10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/card_view_margin_left"
+        android:layout_marginTop="@dimen/card_view_margin_top"
+        android:layout_marginRight="@dimen/card_view_margin_right"
+        app:cardBackgroundColor="@color/card_view_bg_color"
+        app:cardCornerRadius="@dimen/card_view_corner_radius"
+        app:cardElevation="@dimen/card_view_corner_elevation"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekbar_height" />
+
+            <TextView
+                android:id="@+id/txt_progress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekbar_txt_height"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/default_txt"
+                android:textAllCaps="false"
+                android:textColor="@color/default_txt_color" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/config_btn_width"
+        android:layout_height="@dimen/config_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bgm_setconfiguration"
+        android:fadingEdge="horizontal"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/set_configuration"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/set_config_txt_color"
+        android:textSize="@dimen/set_cofig_txt_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

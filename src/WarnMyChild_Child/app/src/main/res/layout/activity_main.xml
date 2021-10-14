@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_connect"
+        app:cardBackgroundColor="@color/wmc_logo_bg_color"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wmc_margin_top">
+
+            <ImageView
+                android:id="@+id/btn_connect"
+                android:layout_width="@dimen/qr_width"
+
+                android:layout_height="@dimen/qr_height"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/qr_icon" />
+
+
+            <Button
+                android:id="@+id/tv_connect_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_connect"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/qr_button_margin"
+                android:fontFamily="@font/abhaya_libre_medium"
+                android:text="Connect to Server"
+                android:textAlignment="center"
+                android:textColor="@color/connect_text_color"
+                android:textSize="@dimen/connect_txt_size" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.huawei.hms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraTargetLat="51"
+        map:cameraTargetLng="10"
+        map:cameraZoom="8.5"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiZoomControls="true" />
+
+
+</RelativeLayout>
